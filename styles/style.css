@@ -50,6 +50,11 @@ header.container .navbar .nav-list li {
 header.container .navbar .nav-list li a {
 	text-decoration: none;
 	color: white;
+	transition: all 0.2s ease-in-out;
+}
+
+header.container .navbar .nav-list li:hover a {
+	color: #bce0e7;
 }
 
 header.container .jumbotron {
@@ -70,4 +75,47 @@ h2 {
 	margin: 0;
 	color: white;
 	font-size: 3rem;
+}
+
+main {
+	width: 1200px;
+	padding-block: 3rem;
+	margin-inline: auto;
+
+	display: flex;
+	justify-content: space-between;
+	gap: 1.5rem;
+}
+
+main .content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+main .content .card {
+	padding: 1rem;
+	border-radius: 28px;
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	background-color: white;
+}
+
+main .content .card img {
+	width: 400px;
+	height: 448px;
+	object-fit: cover;
+	border-radius: 12px;
+}
+
+main .content .card .card-typography span {
+	font-size: 2rem;
+	font-weight: 600;
+	color: black;
+}
+
+main aside .about-us img {
+	width: 352px;
+	height: 189px;
 }
